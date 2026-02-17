@@ -1,0 +1,35 @@
+tokenizer_name: "openai-community/gpt2"
+vocab_size: 50257
+num_functions: 100
+model_checkpoint: "checkpoints/latest.pt"
+use_pretrained: false # Set to false to use the optimized custom SOTA architecture
+image_folder: "data/coco/train2017"
+
+vision_config:
+  image_size: 224
+  patch_size: 14        # Optimized patch size
+  in_channels: 3
+  num_layers: 12        # Balanced for performance
+  embed_dim: 768        # High-capacity vision features
+  num_heads: 12
+  mlp_ratio: 4.0
+  dropout: 0.1
+
+text_config:
+  embed_dim: 768        # Matches vision for clean projection
+  num_layers: 12
+  num_heads: 12
+  max_seq_len: 1024     # Supported by RoPE
+  dropout: 0.1
+
+training_config:
+  batch_size: 4
+  learning_rate: 1.0e-4
+  num_epochs: 10
+  weight_decay: 0.1
+  max_grad_norm: 1.0
+  gradient_accumulation_steps: 4
+  mixed_precision: "bf16" # Recommended for SOTA training
+  output_dir: "checkpoints"
+  num_workers: 4
+
