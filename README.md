@@ -56,9 +56,10 @@ Follow these optimized commands to initialize, train, and deploy Vanguard.
 Prepare your system and pull the multi-modal intelligence datasets:
 ```bash
 # Clone and enter the vault
-cd "Ai Model"
+git clone https://github.com/MurugesanYT/Vanguard.git
+cd Vanguard
 
-# Install elite dependencies
+# Install elite SOTA dependencies
 pip install -r requirements.txt
 
 # Execute the automated dataset pull (LLaVA-150K / ToolBench)
@@ -81,14 +82,26 @@ Full fine-tuning for SOTA conversational and reasoning performance:
 accelerate launch main.py --mode train --config configs/default_config.yaml --stage full-tuning
 ```
 
-### 3. Hyper-Inference & Interaction
-Engage with the model using Nucleus/Top-P sampling and autonomous function calling:
-```bash
-# Interactive Chat Mode
-python main.py --mode infer --config configs/default_config.yaml
+### 3. Running Inference & Interaction
+Engage with the model using Nucleus/Top-P sampling and autonomous function calling.
 
-# Visual Analysis Mode (Supply an image)
-python main.py --mode infer --config configs/default_config.yaml --image "path/to/image.jpg" --prompt "Describe this scene."
+**Interactive Chat Mode** (Talk to the model in real-time):
+```bash
+python main.py --mode infer --config configs/default_config.yaml
+```
+
+**Vision-Language Inference** (Supply an image and a specific prompt):
+```bash
+python main.py --mode infer \
+    --config configs/default_config.yaml \
+    --image "path/to/your_image.jpg" \
+    --prompt "Identify the objects in this image and explain their significance."
+```
+
+**Function Calling Validation**:
+Test if the model triggers the appropriate tool (e.g., weather or system alerts):
+```bash
+python main.py --mode infer --config configs/default_config.yaml --prompt "What is the current weather in Chennai?"
 ```
 
 ## 🌌 Master Command (The "One-Click" Run)
@@ -103,6 +116,7 @@ Vanguard doesn't just "talk"—it **acts**. It can invoke tools, process real-ti
 
 `Prompt: "Analyze the traffic in this image and alert the CM's office if needed."`
 `Output: <function_call>send_alert(priority="High", department="Transport")</function_call>`
+
 
 ---
 *Dedicated to the spirit of innovation and the technological advancement of our nation.*
