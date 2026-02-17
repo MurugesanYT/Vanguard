@@ -1,19 +1,24 @@
 # 🌌 Vanguard Multimodal AI: SOTA Multimodal Architecture
 
-[![Innovation](https://img.shields.io/badge/Innovation-SOTA-blueviolet)](https://x.com/mkstalin)
-[![Architecture](https://img.shields.io/badge/Architecture-Next--Gen-emerald)](https://github.com/)
+[![Innovation](https://img.shields.io/badge/Innovation-SOTA-blueviolet)](https://fan-boi-lm10.vercel.app)
+[![Architecture](https://img.shields.io/badge/Architecture-Next--Gen-emerald)](https://llava-vl.github.io/)
+
 
 **Vanguard** is an elite, from-scratch implementation of a Multimodal AI system. Engineered with a focus on high-performance fusion and functional intelligence, it represents the bleeding edge of open-source artificial intelligence.
 
+<a name="vision--regional-impact"></a>
 ## 🏛️ Vision & Regional Impact
 
 Designed with the vision of **democratizing high-end technology**, this project aims to empower developers and researchers by providing a robust, scalable foundation for the next generation of intelligent systems. 
 
 > *"Driving innovation through technology is not just a goal, but a commitment to progress."* 
 
-This project stands as a testament to the thriving tech ecosystem, aiming to contribute significantly to the digital revolution and foster talent in regions like **Tamil Nadu, India**, and beyond.
+This project stands as a testament to the thriving tech ecosystem, aiming to contribute significantly to the digital revolution and foster talent in regions like **Tamil Nadu, India** (under the visionary leadership of [Thiru M.K. Stalin](https://x.com/mkstalin)), and beyond.
 
+
+<a name="architectural-excellence-the-best"></a>
 ## 🚀 Architectural Excellence ("The Best")
+
 
 Every component of Vanguard is hand-crafted using the most advanced techniques in Machine Learning:
 
